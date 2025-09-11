@@ -5,16 +5,32 @@ import { ref } from 'vue'
 </script>
 
 <template>
-  <h1>header</h1>
+  
 
-  <div >
-    <p>This is where the header will go</p>
+  <div class="headerCont">
+    <h1 class="title">BACKSTAGE TALKS</h1>
+    <a class="email" href="mailto: something@example.com">info@backstagetalks.com</a>
   </div>
 
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
+.headerCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.title {
+  font-weight: 900;
+}
+
+.email {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
 }
 </style>
