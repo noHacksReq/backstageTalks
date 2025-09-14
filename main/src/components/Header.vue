@@ -19,8 +19,11 @@ import { ref } from 'vue'
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Helvetica, sans-serif;
   font-weight: 400;
+  height: 50px;
+  width: 98%;
+  position: fixed;
+  top: -1px;
 }
 
 .title {

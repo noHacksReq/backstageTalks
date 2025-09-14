@@ -37,7 +37,8 @@ a {
 .footerCont {
   display: flex;
   justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 58%;
 }
 
 .info {

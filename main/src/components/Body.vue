@@ -1,34 +1,46 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, defineProps } from 'vue'
 
+const props = defineProps(['imgSrc'])
 
 </script>
 
 <template>
-  <h1>body</h1>
-
-  <div >
-    <p>This is where the body will go</p>
+  <div class="bodyCont">
+    <img class="mainImg" alt="main image" :src="imgSrc"/>
+    <p class="issue">Issue #1</p>
+    <a href="#####">Buy Here</a>
+    <span>
+      <p>Or in <a href="#####">Selected Stores</a></p>
+    </span>
     
-  </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Learn more about IDE Support for Vue in the
-    <a
-      href="https://vuejs.org/guide/scaling-up/tooling.html#ide-support"
-      target="_blank"
-      >Vue Docs Scaling up Guide</a
-    >.
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+    
+  </div> 
 </template>
 
 <style scoped>
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.bodyCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 2%;
+
+}
+
+.mainImg {
+  height: 500px;
+  width: 420px;
+}
+
+.issue {
+  margin: 0;
+}
 </style>
